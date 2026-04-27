@@ -1,399 +1,389 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2821
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;\f1\fnil\fcharset77 ZapfDingbatsITC;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww28300\viewh14840\viewkind0
-\deftab560
-\pard\pardeftab560\slleading20\partightenfactor0
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-\f0\fs26 \cf0 <!DOCTYPE html>\
-<html lang="en">\
-<head>\
-<meta charset="UTF-8">\
-<meta name="viewport" content="width=device-width, initial-scale=1.0">\
-\
-<title>Metanoia Voice</title>\
-\
-<!-- FONTS -->\
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Great+Vibes&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">\
-\
-<!-- ICONS -->\
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">\
-\
-<style>\
-\
-/* RESET */\
-*\{margin:0;padding:0;box-sizing:border-box;\}\
-\
-body\{\
-font-family:'Open Sans',sans-serif;\
-color:white;\
-scroll-behavior:smooth;\
-\
-/* BACKGROUND */\
-background:\
-linear-gradient(rgba(25,0,50,0.85),rgba(10,0,20,0.95)),\
-url('background.jpg'); /* replace */\
-background-size:cover;\
-background-attachment:fixed;\
-\}\
-\
-/* NAV */\
-nav\{\
-display:flex;\
-justify-content:space-between;\
-align-items:center;\
-padding:15px 40px;\
-background:rgba(30,0,60,0.85);\
-backdrop-filter:blur(10px);\
-position:sticky;\
-top:0;\
-z-index:1000;\
-\}\
-\
-/* LOGO */\
-.logo\{\
-font-family:'Cinzel',serif;\
-border:2px solid gold;\
-border-radius:50%;\
-padding:10px 15px;\
-color:gold;\
-box-shadow:0 0 15px rgba(255,215,0,0.6);\
-\}\
-\
-/* NAV LINKS */\
-nav ul\{\
-display:flex;\
-list-style:none;\
-\}\
-\
-nav ul li\{\
-margin-left:25px;\
-\}\
-\
-nav ul li a\{\
-color:white;\
-text-decoration:none;\
-position:relative;\
-\}\
-\
-nav ul li a::after\{\
-content:'';\
-position:absolute;\
-width:0%;\
-height:2px;\
-background:gold;\
-bottom:-5px;\
-left:0;\
-transition:0.3s;\
-\}\
-\
-nav ul li a:hover::after\{\
-width:100%;\
-\}\
-\
-/* HERO */\
-.hero\{\
-display:flex;\
-justify-content:space-between;\
-align-items:center;\
-padding:80px 60px;\
-flex-wrap:wrap;\
-\}\
-\
-/* PROFILE */\
-.profile\{\
-text-align:center;\
-\}\
-\
-.profile img\{\
-width:240px;\
-border-radius:20px;\
-border:3px solid gold;\
-box-shadow:0 0 30px rgba(255,215,0,0.5);\
-\}\
-\
-.profile p\{\
-margin-top:10px;\
-font-family:'Great Vibes',cursive;\
-color:gold;\
-font-size:20px;\
-\}\
-\
-/* TITLE */\
-.title\{\
-max-width:600px;\
-text-align:center;\
-\}\
-\
-.title h1\{\
-font-family:'Cinzel',serif;\
-font-size:75px;\
-color:gold;\
-text-shadow:0 0 30px rgba(255,215,0,0.7);\
-\}\
-\
-.title h2\{\
-font-family:'Great Vibes',cursive;\
-font-size:40px;\
-color:#ffccff;\
-\}\
-\
-.title p\{\
-margin-top:10px;\
-letter-spacing:2px;\
-opacity:0.9;\
-\}\
-\
-/* INTRO */\
-.intro\{\
-max-width:1100px;\
-margin:30px auto;\
-padding:30px;\
-background:rgba(120,50,200,0.2);\
-backdrop-filter:blur(12px);\
-border-radius:12px;\
-border:1px solid rgba(255,215,0,0.4);\
-\
-display:grid;\
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));\
-gap:20px;\
-\}\
-\
-/* CARDS */\
-.cards\{\
-max-width:1100px;\
-margin:auto;\
-padding:30px;\
-display:grid;\
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));\
-gap:20px;\
-\}\
-\
-.card\{\
-background:rgba(255,255,255,0.05);\
-padding:25px;\
-border-radius:12px;\
-backdrop-filter:blur(10px);\
-border:1px solid rgba(255,255,255,0.1);\
-transition:0.3s;\
-\}\
-\
-.card:hover\{\
-transform:translateY(-8px) scale(1.02);\
-box-shadow:0 0 25px rgba(255,215,0,0.3);\
-\}\
-\
-.card h3\{\
-color:gold;\
-margin-bottom:10px;\
-\}\
-\
-.card i\{\
-font-size:30px;\
-margin-bottom:10px;\
-color:#ffccff;\
-\}\
-\
-.card button\{\
-margin-top:10px;\
-padding:10px 15px;\
-border:none;\
-border-radius:6px;\
-background:linear-gradient(45deg,purple,pink,blue);\
-color:white;\
-cursor:pointer;\
-\}\
-\
-/* VIDEO STRIP */\
-.videos\{\
-max-width:1100px;\
-margin:auto;\
-padding:20px;\
-\}\
-\
-.video-row\{\
-display:flex;\
-gap:15px;\
-overflow-x:auto;\
-\}\
-\
-.video\{\
-min-width:220px;\
-height:130px;\
-background:rgba(0,0,0,0.7);\
-border-radius:10px;\
-display:flex;\
-align-items:center;\
-justify-content:center;\
-position:relative;\
-\}\
-\
-.video i\{\
-font-size:30px;\
-color:white;\
-\}\
-\
-/* FOOTER */\
-footer\{\
-margin-top:40px;\
-padding:40px;\
-background:rgba(20,0,40,0.9);\
-\}\
-\
-.footer-grid\{\
-display:grid;\
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));\
-gap:20px;\
-\}\
-\
-.social a\{\
-margin-right:10px;\
-font-size:20px;\
-color:white;\
-\}\
-\
-/* WHATSAPP BUTTON */\
-.whatsapp\{\
-position:fixed;\
-bottom:20px;\
-right:20px;\
-background:#25D366;\
-color:white;\
-padding:15px;\
-border-radius:50%;\
-font-size:22px;\
-box-shadow:0 0 15px rgba(0,0,0,0.5);\
-text-decoration:none;\
-\}\
-\
-</style>\
-</head>\
-\
-<body>\
-\
-<!-- NAV -->\
-<nav>\
-<div class="logo">Me
-\f1 \uc0\u10013 
-\f0 anoia\'99</div>\
-\
-<ul>\
-<li><a href="#">Home</a></li>\
-<li><a href="#">About</a></li>\
-<li><a href="#">Videos</a></li>\
-<li><a href="#">Books</a></li>\
-<li><a href="#">Teachings</a></li>\
-<li><a href="#">Contact</a></li>\
-</ul>\
-</nav>\
-\
-<!-- HERO -->\
-<div class="hero">\
-\
-<div class="profile">\
-<img src="your-photo.jpg">\
-<p>Masters Abraham Agebi</p>\
-</div>\
-\
-<div class="title">\
-<h1>METANOIA</h1>\
-<h2>Metanoia Voice</h2>\
-<p>A CALL TO CHANGE THE MIND<br>AND RETURN TO THE FATHER</p>\
-</div>\
-\
-</div>\
-\
-<!-- INTRO -->\
-<div class="intro">\
-<p>I am Masters Abraham Agevi, a voice called to reveal truth and lead people back to the Father.</p>\
-<p>This generation has knowledge but lacks transformation.</p>\
-<p><i>\'93I was one way\'85 now I am completely different.\'94</i></p>\
-</div>\
-\
-<!-- CARDS -->\
-<div class="cards">\
-\
-<div class="card">\
-<i class="fas fa-play-circle"></i>\
-<h3>Videos</h3>\
-<p>Watch powerful messages</p>\
-<button>Watch</button>\
-</div>\
-\
-<div class="card">\
-<i class="fas fa-book"></i>\
-<h3>Books</h3>\
-<p>Read deep revelations</p>\
-<button>Browse</button>\
-</div>\
-\
-<div class="card">\
-<i class="fas fa-cross"></i>\
-<h3>Teachings</h3>\
-<p>Understand God\'92s heart</p>\
-<button>Explore</button>\
-</div>\
-\
-<div class="card">\
-<i class="fas fa-envelope"></i>\
-<h3>Connect</h3>\
-<p>Reach out directly</p>\
-<button>Contact</button>\
-</div>\
-\
-</div>\
-\
-<!-- VIDEOS -->\
-<div class="videos">\
-<h2>Latest Videos</h2>\
-\
-<div class="video-row">\
-<div class="video"><i class="fas fa-play"></i></div>\
-<div class="video"><i class="fas fa-play"></i></div>\
-<div class="video"><i class="fas fa-play"></i></div>\
-<div class="video"><i class="fas fa-play"></i></div>\
-</div>\
-\
-</div>\
-\
-<!-- FOOTER -->\
-<footer>\
-\
-<div class="footer-grid">\
-\
-<div>\
-<h3>Contact</h3>\
-<p>Phone: +97455267010</p>\
-<p>WhatsApp: +97472074236</p>\
-<p>Email: mastersabraham21@gmail.com</p>\
-</div>\
-\
-<div>\
-<h3>Social</h3>\
-<div class="social">\
-<a href="#"><i class="fab fa-facebook"></i></a>\
-<a href="#"><i class="fab fa-instagram"></i></a>\
-<a href="#"><i class="fab fa-youtube"></i></a>\
-<a href="#"><i class="fab fa-tiktok"></i></a>\
-</div>\
-</div>\
-\
-<div>\
-<h3>Quick Links</h3>\
-<p>About</p>\
-<p>Books</p>\
-<p>Teachings</p>\
-</div>\
-\
-</div>\
-\
-</footer>\
-\
-<!-- WHATSAPP -->\
-<a href="https://wa.me/=\'93+97472074236 class="whatsapp">\
-<i class="fab fa-whatsapp"></i>\
-</a>\
-\
-</body>\
-</html>}
+<title>Metanoia Voice</title>
+
+<!-- FONTS -->
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Great+Vibes&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+<!-- ICONS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+/* RESET */
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+font-family:'Open Sans',sans-serif;
+color:white;
+scroll-behavior:smooth;
+
+/* BACKGROUND */
+background:
+linear-gradient(rgba(25,0,50,0.85),rgba(10,0,20,0.95)),
+url('background.jpg'); /* replace */
+background-size:cover;
+background-attachment:fixed;
+}
+
+/* NAV */
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:rgba(30,0,60,0.85);
+backdrop-filter:blur(10px);
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+/* LOGO */
+.logo{
+font-family:'Cinzel',serif;
+border:2px solid gold;
+border-radius:50%;
+padding:10px 15px;
+color:gold;
+box-shadow:0 0 15px rgba(255,215,0,0.6);
+}
+
+/* NAV LINKS */
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:25px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+position:relative;
+}
+
+nav ul li a::after{
+content:'';
+position:absolute;
+width:0%;
+height:2px;
+background:gold;
+bottom:-5px;
+left:0;
+transition:0.3s;
+}
+
+nav ul li a:hover::after{
+width:100%;
+}
+
+/* HERO */
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:80px 60px;
+flex-wrap:wrap;
+}
+
+/* PROFILE */
+.profile{
+text-align:center;
+}
+
+.profile img{
+width:240px;
+border-radius:20px;
+border:3px solid gold;
+box-shadow:0 0 30px rgba(255,215,0,0.5);
+}
+
+.profile p{
+margin-top:10px;
+font-family:'Great Vibes',cursive;
+color:gold;
+font-size:20px;
+}
+
+/* TITLE */
+.title{
+max-width:600px;
+text-align:center;
+}
+
+.title h1{
+font-family:'Cinzel',serif;
+font-size:75px;
+color:gold;
+text-shadow:0 0 30px rgba(255,215,0,0.7);
+}
+
+.title h2{
+font-family:'Great Vibes',cursive;
+font-size:40px;
+color:#ffccff;
+}
+
+.title p{
+margin-top:10px;
+letter-spacing:2px;
+opacity:0.9;
+}
+
+/* INTRO */
+.intro{
+max-width:1100px;
+margin:30px auto;
+padding:30px;
+background:rgba(120,50,200,0.2);
+backdrop-filter:blur(12px);
+border-radius:12px;
+border:1px solid rgba(255,215,0,0.4);
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+/* CARDS */
+.cards{
+max-width:1100px;
+margin:auto;
+padding:30px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:rgba(255,255,255,0.05);
+padding:25px;
+border-radius:12px;
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px) scale(1.02);
+box-shadow:0 0 25px rgba(255,215,0,0.3);
+}
+
+.card h3{
+color:gold;
+margin-bottom:10px;
+}
+
+.card i{
+font-size:30px;
+margin-bottom:10px;
+color:#ffccff;
+}
+
+.card button{
+margin-top:10px;
+padding:10px 15px;
+border:none;
+border-radius:6px;
+background:linear-gradient(45deg,purple,pink,blue);
+color:white;
+cursor:pointer;
+}
+
+/* VIDEO STRIP */
+.videos{
+max-width:1100px;
+margin:auto;
+padding:20px;
+}
+
+.video-row{
+display:flex;
+gap:15px;
+overflow-x:auto;
+}
+
+.video{
+min-width:220px;
+height:130px;
+background:rgba(0,0,0,0.7);
+border-radius:10px;
+display:flex;
+align-items:center;
+justify-content:center;
+position:relative;
+}
+
+.video i{
+font-size:30px;
+color:white;
+}
+
+/* FOOTER */
+footer{
+margin-top:40px;
+padding:40px;
+background:rgba(20,0,40,0.9);
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.social a{
+margin-right:10px;
+font-size:20px;
+color:white;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50%;
+font-size:22px;
+box-shadow:0 0 15px rgba(0,0,0,0.5);
+text-decoration:none;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+<div class="logo">Me✝anoia™</div>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Videos</a></li>
+<li><a href="#">Books</a></li>
+<li><a href="#">Teachings</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+
+<div class="profile">
+<img src="your-photo.jpg">
+<p>Masters Abraham Agebi</p>
+</div>
+
+<div class="title">
+<h1>METANOIA</h1>
+<h2>Metanoia Voice</h2>
+<p>A CALL TO CHANGE THE MIND<br>AND RETURN TO THE FATHER</p>
+</div>
+
+</div>
+
+<!-- INTRO -->
+<div class="intro">
+<p>I am Masters Abraham Agevi, a voice called to reveal truth and lead people back to the Father.</p>
+<p>This generation has knowledge but lacks transformation.</p>
+<p><i>“I was one way… now I am completely different.”</i></p>
+</div>
+
+<!-- CARDS -->
+<div class="cards">
+
+<div class="card">
+<i class="fas fa-play-circle"></i>
+<h3>Videos</h3>
+<p>Watch powerful messages</p>
+<button>Watch</button>
+</div>
+
+<div class="card">
+<i class="fas fa-book"></i>
+<h3>Books</h3>
+<p>Read deep revelations</p>
+<button>Browse</button>
+</div>
+
+<div class="card">
+<i class="fas fa-cross"></i>
+<h3>Teachings</h3>
+<p>Understand God’s heart</p>
+<button>Explore</button>
+</div>
+
+<div class="card">
+<i class="fas fa-envelope"></i>
+<h3>Connect</h3>
+<p>Reach out directly</p>
+<button>Contact</button>
+</div>
+
+</div>
+
+<!-- VIDEOS -->
+<div class="videos">
+<h2>Latest Videos</h2>
+
+<div class="video-row">
+<div class="video"><i class="fas fa-play"></i></div>
+<div class="video"><i class="fas fa-play"></i></div>
+<div class="video"><i class="fas fa-play"></i></div>
+<div class="video"><i class="fas fa-play"></i></div>
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+
+<div class="footer-grid">
+
+<div>
+<h3>Contact</h3>
+<p>Phone: +97455267010</p>
+<p>WhatsApp: +97472074236</p>
+<p>Email: mastersabraham21@gmail.com</p>
+</div>
+
+<div>
+<h3>Social</h3>
+<div class="social">
+<a href="#"><i class="fab fa-facebook"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-youtube"></i></a>
+<a href="#"><i class="fab fa-tiktok"></i></a>
+</div>
+</div>
+
+<div>
+<h3>Quick Links</h3>
+<p>About</p>
+<p>Books</p>
+<p>Teachings</p>
+</div>
+
+</div>
+
+</footer>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/=“+97472074236 class="whatsapp">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+</body>
+</html>
