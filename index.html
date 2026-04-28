@@ -6,15 +6,11 @@
 
 <title>Metanoia Voice</title>
 
-<!-- FONTS -->
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Great+Vibes&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-
-<!-- ICONS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 
-/* RESET */
 *{margin:0;padding:0;box-sizing:border-box;}
 
 body{
@@ -28,7 +24,6 @@ background-size:cover;
 background-attachment:fixed;
 }
 
-/* NAV */
 nav{
 display:flex;
 justify-content:space-between;
@@ -41,7 +36,6 @@ top:0;
 z-index:1000;
 }
 
-/* LOGO */
 .logo{
 font-family:'Cinzel',serif;
 border:2px solid gold;
@@ -51,7 +45,6 @@ color:gold;
 box-shadow:0 0 15px rgba(255,215,0,0.6);
 }
 
-/* NAV LINKS */
 nav ul{
 display:flex;
 list-style:none;
@@ -82,7 +75,6 @@ nav ul li a:hover::after{
 width:100%;
 }
 
-/* HERO */
 .hero{
 display:flex;
 justify-content:space-between;
@@ -91,7 +83,6 @@ padding:80px 60px;
 flex-wrap:wrap;
 }
 
-/* PROFILE */
 .profile{
 text-align:center;
 }
@@ -110,7 +101,6 @@ color:gold;
 font-size:20px;
 }
 
-/* TITLE */
 .title{
 max-width:600px;
 text-align:center;
@@ -135,7 +125,6 @@ letter-spacing:2px;
 opacity:0.9;
 }
 
-/* INTRO */
 .intro{
 max-width:1100px;
 margin:30px auto;
@@ -149,7 +138,6 @@ grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
 }
 
-/* CARDS */
 .cards{
 max-width:1100px;
 margin:auto;
@@ -194,7 +182,6 @@ color:white;
 cursor:pointer;
 }
 
-/* VIDEO STRIP */
 .videos{
 max-width:1100px;
 margin:auto;
@@ -222,7 +209,6 @@ font-size:30px;
 color:white;
 }
 
-/* FOOTER */
 footer{
 margin-top:40px;
 padding:40px;
@@ -241,7 +227,6 @@ font-size:20px;
 color:white;
 }
 
-/* WHATSAPP */
 .whatsapp{
 position:fixed;
 bottom:20px;
@@ -259,20 +244,17 @@ text-decoration:none;
 
 <body>
 
-<!-- NAV -->
 <nav>
 <div class="logo">Me✝anoia™</div>
 <ul>
 <li><a href="#">Home</a></li>
-<li><a href="#">About</a></li>
-<li><a href="#">Videos</a></li>
-<li><a href="#">Books</a></li>
-<li><a href="#">Teachings</a></li>
-<li><a href="#">Contact</a></li>
+<li><a href="#books">Books</a></li>
+<li><a href="#teachings">Teachings</a></li>
+<li><a href="#videos">Videos</a></li>
+<li><a href="#contact">Contact</a></li>
 </ul>
 </nav>
 
-<!-- HERO -->
 <div class="hero">
 <div class="profile">
 <img src="profile.jpeg">
@@ -286,69 +268,76 @@ text-decoration:none;
 </div>
 </div>
 
-<!-- INTRO -->
 <div class="intro">
 <p>I am Masters Abraham Agevi, a voice called to reveal truth and lead people back to the Father.</p>
 <p>This generation has knowledge but lacks transformation.</p>
 <p><i>“I was one way… now I am completely different.”</i></p>
 </div>
 
-<!-- CARDS -->
 <div class="cards">
-
-<div class="card">
-<i class="fas fa-play-circle"></i>
-<h3>Videos</h3>
-<p>Watch powerful messages</p>
-<button>Watch</button>
+<div class="card"><i class="fas fa-play-circle"></i><h3>Videos</h3><button>Watch</button></div>
+<div class="card"><i class="fas fa-book"></i><h3>Books</h3><button>Browse</button></div>
+<div class="card" id="teachings"><i class="fas fa-cross"></i><h3>Teachings</h3><button onclick="window.location.href='teaching1.html'">Read Teaching</button></div>
+<div class="card"><i class="fas fa-envelope"></i><h3>Connect</h3><button>Contact</button></div>
 </div>
 
-<div class="card">
-<i class="fas fa-book"></i>
-<h3>Books</h3>
-<p>Read deep revelations</p>
-<button>Browse</button>
-</div>
+<div class="cards" id="books">
+<h2 style="grid-column:1/-1;text-align:center;color:gold;">Books Library</h2>
 
 <div class="card">
-<i class="fas fa-cross"></i>
-<h3>Teachings</h3>
-<p>Understand God’s heart</p>
-<button onclick="window.location.href='teaching1.html'">Read Teaching</button>
-</div>
-
-<div class="card">
-<i class="fas fa-envelope"></i>
-<h3>Connect</h3>
-<p>Reach out directly</p>
-<button>Contact</button>
-</div>
-
-</div>
-
-<!-- BOOKS LIBRARY -->
-<div class="cards">
-<h2 style="grid-column:1/-1; text-align:center; color:gold;">Books Library</h2>
-
-<div class="card">
-<img src="book1.jpeg" style="width:100%; border-radius:10px;">
+<img src="book1.jpeg" style="width:100%;border-radius:10px;">
 <h3>Book One</h3>
 <a href="book1.pdf" target="_blank"><button>Read / Download</button></a>
 </div>
 
 <div class="card">
-<img src="book2.png" style="width:100%; border-radius:10px;">
+<img src="book2.png" style="width:100%;border-radius:10px;">
 <h3>Book Two</h3>
 <a href="book2.pdf" target="_blank"><button>Read / Download</button></a>
 </div>
 
 <div class="card">
-<img src="book3.png" style="width:100%; border-radius:10px;">
+<img src="book3.png" style="width:100%;border-radius:10px;">
 <h3>Book Three</h3>
 <a href="book3.pdf" target="_blank"><button>Read / Download</button></a>
 </div>
 
 </div>
+
+<div class="videos" id="videos">
+<h2>Latest Videos</h2>
+<div class="video-row">
+<div class="video"><i class="fas fa-play"></i></div>
+<div class="video"><i class="fas fa-play"></i></div>
+<div class="video"><i class="fas fa-play"></i></div>
+</div>
+</div>
+
+<footer id="contact">
+<div class="footer-grid">
+
+<div>
+<h3>Contact</h3>
+<p>Phone: +97455267010</p>
+<p>WhatsApp: +97472074236</p>
+<p>Email: mastersabraham21@gmail.com</p>
+</div>
+
+<div>
+<h3>Social</h3>
+<div class="social">
+<a href="#"><i class="fab fa-facebook"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-youtube"></i></a>
+</div>
+</div>
+
+</div>
+</footer>
+
+<a href="https://wa.me/97472074236" class="whatsapp">
+<i class="fab fa-whatsapp"></i>
+</a>
 
 </body>
 </html>
